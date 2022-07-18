@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+input::focus{
+    outline: none;
+}
+/*Facebook Header Design*/
+
+.fb-top-header{
+    padding: 7px 0;
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+
+}
+.search{
+    margin-left: 7px;
+}
+.fb-brand{
+    display: flex;
+    align-items: center;
+}
+.fb-brand a{
+    width: 30px;
+    height: 30px;
+    background-image: url(image/Fb\ icon/Fbicon1.png);
+    display: inline-block;
+    background-position: 1px 1px;
+    transform: scale(1.2);
+}
+.fb-brand input{
+    padding: 8px 10px 8px 30px;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 1px solid #f0f2f5;
+    background-color: #f0f2f5;
+    width: 235px;
+}
+
+.fb-brand .search button{
+    position: absolute;
+    left: 65px;
+    top: 17px;
+    border: none;
+    background-color: #f0f2f5;
+    border-radius: 50px;
+
+}
+
+
+/* Facebook Menu Design */
+.fb-menu ul{
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+.fb-menu ul li a{
+    display: block;
+    color: #65676b;
+}
+
+.fb-menu ul li{
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
+
+.fb-menu ul li.active::before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    display: block;
+    background-color: #1b74e4;
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+}
+.fb-menu ul li.active a{
+    color: #1b74e4;
+}
+
+/* Facebook oth design */
+.fb-oth ul{
+    margin-bottom: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+.fb-oth ul li{
+    padding: 0 5px;
+}
+.fb-oth ul li img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.fb-oth ul li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: #000;
+    background-color: #e4e6eb;
+    font-size: 19px;
+    line-height: 35px;
+}
+
+
+/* Facebook body Css start */
+
+.fb-body{
+    background-color: #f0f2f5;
+    padding-top: 80px;
+}
+
+.user-info .list{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 65%;
+    cursor: pointer;
+}
+
+.user-info .list img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+.list-title{
+    margin-left: 8px;
+    font-weight: 500;
+}
+
+.list:hover{
+    background-color: #E4E6E8;
+    padding: 5px;
+    border-radius: 5px;
+}
+.seeMore{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #e4e6eb;
+}
+.seeMore svg{
+    color: #000;
+}
+.shortInfo .list img{
+    border-radius: 5px !important;
+}
+/* Facebook body Css end */
+
+.fb-story-area{
+    display: flex;
+    justify-content: space-between;
+}
+.fb-story-area .story-box{
+    width: 103px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    background-size: auto 100%;
+    background-position: center center;
+    cursor: pointer;
+    position: relative;
+    box-shadow: rgb(0 0 0 / 8%) 0px 0.125rem 0.25rem !important;
+    transition: .3s ease-in-out;
+}
+
+.fb-story-area .story-box:hover{
+    background-size: auto 103%;
+}
+
+.fb-story-area .story-box:first-child{
+    background-image: url(./image/I1.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    color: #000;
+    transition: .3s ease-in-out;
+}
+
+.fb-story-area .story-box:first-child:hover{
+    background-size: auto 81%;
+}
+.fb-story-area .story-box .story{
+    color: #000;
+    left: 12px;
+}
+
+.fb-story-area .story-box .story-avater{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    line-height: 25px;
+    bottom: 20px;
+    left: 30px;
+    background-color: #1b74e4;
+    border: 4px solid #fff;
+}
+.user-avater.story-avater a {
+    color: #fff !important;
+}
+.fb-story-area .story-box:nth-child(2){
+    background-image: url(./image/I2.jpg);
+}
+
+.fb-story-area .story-box:nth-child(3){
+    background-image: url(./image/I3.jpg);
+}
+
+.fb-story-area .story-box:nth-child(4){
+    background-image: url(./image/I4.jpg);
+}
+
+.fb-story-area .story-box:nth-child(5){
+    background-image: url(./image/I5.jpg);
+}
+
+.fb-story-area .user-avater{
+    width: 37px;
+    height: 37px;
+    text-align: center;
+    border-radius: 100%;
+    border: 4px solid #1b74e4;
+    overflow: hidden;
+}
+
+.fb-story-area span{
+    position: absolute;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    left: 10px;
+    bottom: 5px;
+}
+
+
+/* post modal area css start */
+
+.postModalArea card{
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 8%) 0px 0.125rem 0.25rem !important;
+}
+
+.postModalArea .modalButton img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.postModalArea .modalButton button{
+    border-radius: 50px;
+    padding: 8px;
+    background-color: #F0F2F5;
+    color: #65676b;
+    font-size: 18px;
+    margin-left: 5px;
+    text-align: left;
+    width: 90%;
+    border: none;
+}
+
+.postModalArea .modalButton button:hover{
+    background-color: #dde0e4;
+}
+
+.iconArea{
+    display: flex;
+    justify-content: space-around;
+}
+
+.iconArea .iconBox{
+    flex: 1;
+    text-align: center;
+    padding: 8px 0;
+    cursor: pointer ;
+    font-size: 15px;
+}
+
+.iconArea .iconBox svg{
+    font-size: 22px;
+}
+
+.iconArea .iconBox:first-child svg{
+    color: red;
+}
+
+.iconArea .iconBox:nth-child(2) svg{
+    color: #41B35D;
+}
+
+.iconArea .iconBox:nth-child(3) svg{
+    color: #f7b928; 
+}
+
+.iconArea .iconBox span{
+    color: #65676b;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 8px;
+}
+
+.iconArea .iconBox:hover{
+    border-radius: 10px;
+    background-color: #F2F2F2;
+}
+/* post modal area css end */
+
+/* post timeline css start */
+
+.postAuthArea{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postAuthArea .userInfo{
+    display: flex;
+    align-items: center;
+}
+
+.postAuthArea .userInfo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.postAuthArea .userInfo .userDetails span{
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.postAuthArea .userInfo .userDetails span:hover{
+    text-decoration: underline;
+}
+.postAuthArea .userInfo .userDetails .userName{
+    font-size: 16px;
+    font-weight: 600;
+}
+a.dropdown-toggle {
+    color: #65676b;
+}
+a.dropdown-toggle::after {
+    display: none;
+}
+.postAuthArea .dropdown{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: transparent;
+}
+.postAuthArea .dropdown:hover{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: #f0f2f5;
+}
+.allPosts .postImage img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.allPosts .postVideo iframe{
+    width: 100%;
+    max-width: 100%;
+    min-height: 400px;
+}
+.contentButton .reaction{
+    display: flex;
+    padding: 3px 2px;
+}
+.contentButton .reactionButton{
+    padding: 10px 15px;
+}
+.contentButton .reaction .reactionButton{
+    flex: 1;
+    text-align: center;
+    padding: 8px 0;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px;
+}
+.contentButton .reaction .reactionButton:hover{
+    background-color: #e7e7e7;
+}
+.contentButton .firstHr{
+    margin-bottom: 0;
+}
+.contentButton .lastHr{
+    margin-top: 0;
+}
+
+/* post timeline css end */

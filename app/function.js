@@ -7,7 +7,7 @@
 const setAlert=( msg, type='danger')=>{
     return `<p class="alert alert-${type} d-flex justify-content-between">
     ${msg}<button data-bs-dismiss="alert" class="btn-close"></button></p>`;
-}
+};
 
 
 // Product app individual function
@@ -31,7 +31,7 @@ const createLsData = (key, value) =>{
     data.push(value);
     // set data
     localStorage.setItem(key, JSON.stringify(data));
-}
+};
 
 /**
  * get all local host data ( Step -2 )
@@ -44,7 +44,7 @@ const readlsData = (key) =>{
     }else{
         return false;
     }
-}
+};
 
 /**
  * Update ls data
@@ -53,4 +53,4 @@ const readlsData = (key) =>{
  const updatelsData = (key, array) =>{   
     
     localStorage.setItem(key, JSON.stringify(array))
-}
+};
